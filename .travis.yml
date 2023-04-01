@@ -38,6 +38,8 @@ script:
   # Run the test 
   - docker run -e CI=true USERNAME/react-test npm test
 
-
+after_success: 
+  # Test 
+  - echo "success"
 
 
