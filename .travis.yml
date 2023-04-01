@@ -4,7 +4,7 @@ services:
 
 before_install: 
   # Get encrypted json, decrypts and places it in the project directory 
-  openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d
+  - openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d
 
   # Download Google Cloud SDK & install locally. 
   - curl https://sdk.cloud.google.com | bash > /dev/null; 
