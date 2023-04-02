@@ -29,3 +29,4 @@ kubectl set image deployments/worker-deployment worker=bobuvula/worker_client:$S
 kubectl set image deployments/server-deployment server=cygnetops/multi-server-pgfix-5-11:latest
 kubectl set image deployments/client-deployment client=stephengrider/multi-client:latest 
 
+echo "finished deploy.sh"
