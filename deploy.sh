@@ -25,7 +25,7 @@ kubectl apply -f k8s
 # Omitting this step for the client & server as I am using the lecturer's other versions. 
 # There is some error going on. 
 # kubectl set image deployments/worker-deployment worker=bobuvula/worker_client:$SHA
-kubectl set image deployments/worker-deployment worker=bobuvula/worker_client:latest
+kubectl set image deployments/worker-deployment worker=stephengrider/multi-worker:latest
 
 # Fix the server and client images
 kubectl set image deployments/server-deployment server=cygnetops/multi-server-pgfix-5-11:latest
