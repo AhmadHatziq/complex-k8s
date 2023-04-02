@@ -29,7 +29,7 @@ before_install:
   - gcloud config set compute/zone asia-southeast1-a
 
   # Select the container name. 
-  - gcloud container clusters get-credentuals multi-cluster
+  - gcloud container clusters get-credentials multi-cluster
 
   # Login to Docker using Travis variables 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin 
