@@ -1,6 +1,6 @@
 # complex-k8s
 
-Complex application which will be run on k8s via Google's Kubernetes Engine. 
+Complex Fibonacci application which will be run on k8s via Google's Kubernetes Engine. 
 
 Done as part of the Udemy course [Docker & Kubernetes: The Complete Guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/). 
 
