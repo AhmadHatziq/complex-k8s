@@ -22,8 +22,10 @@ docker push bobuvula/multi_worker:$SHA
 kubectl apply -f k8s 
 
 # Set the server image to use the latest version using the $SHA
-# Omitting this step for the client & server as I am are the lecturer's other versions. 
-kubectl set image deployments/worker-deployment worker=bobuvula/worker_client:$SHA
+# Omitting this step for the client & server as I am using the lecturer's other versions. 
+# There is some error going on. 
+# kubectl set image deployments/worker-deployment worker=bobuvula/worker_client:$SHA
+kubectl set image deployments/worker-deployment worker=bobuvula/worker_client:latest
 
 # Fix the server and client images
 kubectl set image deployments/server-deployment server=cygnetops/multi-server-pgfix-5-11:latest
