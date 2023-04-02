@@ -40,7 +40,7 @@ before_install:
 script: 
 
   # Run the test 
-  - docker run -e CI=true USERNAME/react-test npm test
+  - docker run -e CI=true react_test_image npm test
 
 after_success: 
   # Test 
